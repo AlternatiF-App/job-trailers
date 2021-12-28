@@ -40,7 +40,11 @@ module.exports = {
       purple: colors.purple,
       fuchsia: colors.fuchsia,
       pink: colors.pink,
-      rose: colors.rose
+      rose: colors.rose,
+      primary: '#E7E7DE',
+      secondary: '#008891',
+      third: '#00587A',
+      fourth: '#0F3057'
     }),
     columns: {
       auto: 'auto',

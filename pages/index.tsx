@@ -1,9 +1,10 @@
+import Header from '../components/Header/Header'
 
 const Home = () => {
   return (
-    <div className="text-9xl font-oxygen">
-        HELLO
-    </div>
+    <>
+        <Header/>
+    </>
   )
 }
 
