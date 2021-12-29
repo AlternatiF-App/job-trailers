@@ -10,8 +10,8 @@ const Header = () => {
 
   return (
     <div className="font-oxygen text-sm lg:text-base shadow-sm">
-        <div className="bg-primary w-full py-0.5 px-4">
-            <div className="flex justify-end w-full lg:w-10/12 lg:mx-auto">
+        <div className="bg-primary w-full py-0.5 px-4 lg:px-8 2xl:px-4">
+            <div className="flex justify-end w-full 2xl:w-10/12 2xl:mx-auto">
                 <p className="text-secondary flex items-center text-xs md:text-sm font-medium">
                     <MailIcon className="h-5 w-5 mr-2" fill="none" stroke="currentColor"/>
                     job-trailers@job.trailers.com
@@ -19,7 +19,7 @@ const Header = () => {
             </div>
         </div>
         <div className="bg-white">
-            <div className="w-full lg:w-10/12 lg:mx-auto py-2 px-4 lg:py-4 lg:px-6">
+            <div className="w-full 2xl:w-10/12 2xl:mx-auto py-2 px-4 lg:py-4 lg:px-8 2xl:px-6">
                 <div className="flex justify-between w-full">
                     <div className="w-1/3 lg:w-1/2 flex items-center space-x-12">
                         <div>
@@ -64,7 +64,7 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
-                <div className="hidden mt-1 py-2 px-8 lg:flex items-center justify-between">
+                <div className="hidden mt-1 py-2 px-2 lg:flex items-center justify-between">
                     <ul className="font-medium flex items-center space-x-8">
                         <li className="hover:text-primary text-gray-500 cursor-pointer transition-all duration-300 ease-in-out">Dashboard</li>
                         <li className="hover:text-primary text-gray-500 cursor-pointer transition-all duration-300 ease-in-out">Discover</li>

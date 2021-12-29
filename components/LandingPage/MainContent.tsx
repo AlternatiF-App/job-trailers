@@ -5,8 +5,8 @@ const MainContent = () => {
   const [showPassword, setShowPassword] = useState('password')
 
   return (
-    <div className="font-oxygen text-sm lg:text-base lg:flex w-full lg:w-10/12 lg:mx-auto">
-        <div className="w-full lg:w-1/2 py-24 lg:py-28 px-4">
+    <div className="font-oxygen text-sm lg:text-base lg:flex w-full 2xl:w-10/12 2xl:mx-auto">
+        <div className="w-full lg:w-1/2 py-16 lg:py-28 px-4 lg:px-8 2xl:px-4">
             <h1 className="text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-primary">
                 Find your payload or take part-time drivers jobs.
             </h1>
@@ -46,7 +46,7 @@ const MainContent = () => {
                 </button>
             </div>
         </div>
-        <div className="w-full lg:w-1/2 px-4 py-8 lg:p-14">
+        <div className="w-full lg:w-1/2 px-4 py-8 lg:px-4 lg:py-16 xl:px-8 xl:py-14 2xl:p-14">
             <img className="w-full h-auto"
                 src="/assets/images/vector.png" alt="main-image"
             />
