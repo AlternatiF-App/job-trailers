@@ -41,7 +41,7 @@ const MainContent = () => {
                 Forgot password?
             </span>
             <div className="w-full lg:w-2/3 mt-12">
-                <button className="px-4 py-2 bg-primary text-secondary w-full rounded-full">
+                <button className="px-4 py-3 bg-primary text-secondary w-full rounded-full">
                     Sign In
                 </button>
             </div>
