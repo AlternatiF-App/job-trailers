@@ -1,4 +1,5 @@
 import Header from '../components/Header/Header'
+import Category from '../components/LandingPage/Category'
 import MainContent from '../components/LandingPage/MainContent'
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
     <>
         <Header/>
         <MainContent/>
+        <Category/>
     </>
   )
 }
