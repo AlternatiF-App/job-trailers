@@ -2,7 +2,7 @@ import { EyeIcon, EyeOffIcon, ChevronLeftIcon } from '@heroicons/react/outline'
 import { useState } from 'react'
 import Link from 'next/link'
 
-const SignIn = () => {
+const SignUp = () => {
   const [showPassword, setShowPassword] = useState('password')
 
   return (
@@ -25,9 +25,9 @@ const SignIn = () => {
                     />
                 </div>
             </div>
-            <div className=" w-full lg:w-1/2 py-16 lg:py-40 px-4 lg:px-8 2xl:px-48">
+            <div className=" w-full lg:w-1/2 py-16 lg:py-36 px-4 lg:px-8 2xl:px-48">
                 <Link href="/">
-                    <div className="block lg:hidden cursor-pointer flex items-center space-x-2 -mt-12 -ml-3">
+                    <div className="lg:hidden cursor-pointer flex items-center space-x-2 -mt-12 -ml-3">
                         <ChevronLeftIcon
                             className="h-10 w-10 text-primary"
                             fill="none" stroke="currentColor"
@@ -38,10 +38,10 @@ const SignIn = () => {
                     </div>
                 </Link>
                 <h1 className="mt-10 lg:mt-0 text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-primary">
-                    Sign In
+                    Sign Up
                 </h1>
                 <p className="text-primary text-lg pt-6">
-                    Discover all company and payload for you experience.
+                    Join to discover all the jobs or find your drivers here.
                 </p>
                 <div className="pt-14">
                     <input placeholder="Email" type="email"
@@ -70,12 +70,17 @@ const SignIn = () => {
                         }
                     </div>
                 </div>
-                <span className="block text-sm pl-2 text-primary cursor-pointer">
-                    Forgot password?
-                </span>
+                <div>
+                    <p className="block text-sm text-center px-20 mt-4 text-gray-500 cursor-pointer">
+                        By clicking Agree & Join, you agree to the Job Trailers
+                        <span className="hover:text-primary hover:underline cursor-pointer transition-all duration-300 ease-in-out">User Agreement</span>,
+                        <span className="hover:text-primary hover:underline cursor-pointer transition-all duration-300 ease-in-out">Privacy Policy</span>,
+                        and<span className="hover:text-primary hover:underline cursor-pointer transition-all duration-300 ease-in-out"> Cookie Policy</span>.
+                    </p>
+                </div>
                 <div className="w-full mt-12">
                     <button className="px-4 py-3 bg-primary text-secondary w-full rounded-full">
-                        Sign In
+                        Agree & Join
                     </button>
                 </div>
                 <div className="items-center py-2 my-2">
@@ -91,7 +96,7 @@ const SignIn = () => {
                             src="/assets/icons/facebook.png"
                         />
                         <span className="block text-primary">
-                            Sign In with Facebook
+                            Sign Up with Facebook
                         </span>
                     </div>
                     <div className="px-4 py-2 w-full lg:w-1/2 justify-center flex items-center space-x-8 border border-primary rounded-full">
@@ -99,17 +104,17 @@ const SignIn = () => {
                             src="/assets/icons/google.png"
                         />
                         <span className="block text-primary">
-                            Sign In with Google
+                            Sign Up with Google
                         </span>
                     </div>
                 </div>
                 <div className="flex justify-center items-center space-x-3 mt-8">
                     <span className="block text-primary">
-                        New in Job Trailers?
+                        Already on Job Trailers?
                     </span>
-                    <Link href="/sign-up">
+                    <Link href="/sign-in">
                         <span className="block cursor-pointer rounded-full px-3 py-0.5 text-primary hover:text-secondary hover:bg-primary">
-                            Join now
+                            Sign In
                         </span>
                     </Link>
                 </div>
@@ -118,4 +123,4 @@ const SignIn = () => {
   )
 }
 
-export default SignIn
+export default SignUp

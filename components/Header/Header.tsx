@@ -54,9 +54,11 @@ const Header = () => {
                                 auth
                                   ? <Image onClick={() => setAuth(!auth)} src="/assets/images/ava.jpg" alt="avatar" className="rounded-full object-cover" width="38" height="38" />
                                   : <div>
-                                    <button onClick={() => setAuth(!auth)} className="px-4 py-1 rounded-full bg-secondary text-primary">
-                                        Join Now
-                                    </button>
+                                    <Link href="/sign-up">
+                                        <button className="px-4 py-1 rounded-full bg-secondary text-primary">
+                                            Join Now
+                                        </button>
+                                    </Link>
                                     <Link href="/sign-in">
                                         <button className="px-4 py-1 rounded-full bg-primary text-secondary">
                                             Sign In
