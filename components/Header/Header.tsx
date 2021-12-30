@@ -2,10 +2,11 @@ import Image from 'next/image'
 import { useState } from 'react'
 import { SearchIcon } from '@heroicons/react/solid'
 import { BellIcon, CogIcon, MenuIcon, MailIcon, GlobeIcon } from '@heroicons/react/outline'
+import Link from 'next/link'
 
 const Header = () => {
   const [menu, setMenu] = useState(false)
-  const [auth, setAuth] = useState(true)
+  const [auth, setAuth] = useState(false)
   const active:string = 'border-r-4 border-primary'
 
   return (
@@ -53,12 +54,14 @@ const Header = () => {
                                 auth
                                   ? <Image onClick={() => setAuth(!auth)} src="/assets/images/ava.jpg" alt="avatar" className="rounded-full object-cover" width="38" height="38" />
                                   : <div>
-                                    <button onClick={() => setAuth(!auth)} className="px-4 py-1 rounded-xl bg-secondary text-primary">
+                                    <button onClick={() => setAuth(!auth)} className="px-4 py-1 rounded-full bg-secondary text-primary">
                                         Join Now
                                     </button>
-                                    <button onClick={() => setAuth(!auth)} className="px-4 py-1 rounded-xl bg-primary text-secondary">
-                                        Sign In
-                                    </button>
+                                    <Link href="/sign-in">
+                                        <button className="px-4 py-1 rounded-full bg-primary text-secondary">
+                                            Sign In
+                                        </button>
+                                    </Link>
                                 </div>
                             }
                         </div>
