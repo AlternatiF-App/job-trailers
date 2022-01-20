@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { useState } from 'react'
 import { SearchIcon } from '@heroicons/react/solid'
-import { BellIcon, CogIcon, MenuIcon, MailIcon, GlobeIcon } from '@heroicons/react/outline'
+import { BellIcon, CogIcon, MenuIcon, MailIcon } from '@heroicons/react/outline'
 import Link from 'next/link'
 
 const Header = () => {
@@ -20,14 +20,14 @@ const Header = () => {
             </div>
         </div>
         <div className="bg-white">
-            <div className="w-full 2xl:w-10/12 2xl:mx-auto py-2 px-4 lg:py-4 lg:px-8 2xl:px-6">
+            <div className="w-full 2xl:w-10/12 2xl:mx-auto py-3 px-4 lg:py-4 lg:px-8 2xl:px-6">
                 <div className="flex justify-between w-full">
-                    <div className="w-1/3 lg:w-1/2 flex items-center space-x-12">
+                    <div className="w-auto lg:w-1/2 flex items-center space-x-12">
                         <div>
                             <img
                                 className="w-12 md:w-20 lg:w-24 h-auto"
                                 src='/assets/images/job-trailer.png'
-                                alt="logo"
+                                alt="logo" loading="lazy"
                             />
                         </div>
                         <div className="hidden lg:block w-full relative">
@@ -39,7 +39,7 @@ const Header = () => {
                             </button>
                         </div>
                     </div>
-                    <div className="flex justify-end space-x-6 items-center w-full lg:w-1/2">
+                    <div className="flex justify-end space-x-6 items-center w-auto lg:w-1/2">
                         <div className="flex space-x-4 lg:space-x-2 items-center">
                             <SearchIcon className="block lg:hidden text-primary h-5 w-5" fill="currentColor" stroke="none"/>
                             <BellIcon className="text-primary h-5 w-5" fill="none" stroke="currentColor"/>
@@ -49,18 +49,18 @@ const Header = () => {
                                 className="block lg:hidden text-primary h-5 w-5"
                                 fill="none" stroke="currentColor"/>
                         </div>
-                        <div className="hidden lg:flex lg:space-x-2 items-center">
+                        <div className="hidden lg:block">
                             {
                                 auth
                                   ? <Image onClick={() => setAuth(!auth)} src="/assets/images/ava.jpg" alt="avatar" className="rounded-full object-cover" width="38" height="38" />
-                                  : <div>
-                                    <Link href="/sign-up">
-                                        <button className="px-4 py-1 rounded-full bg-secondary text-primary">
+                                  : <div className="flex lg:space-x-2 items-center">
+                                    <Link href="/sign-upw">
+                                        <button className="px-3 py-0.5 rounded-full bg-secondary text-primary">
                                             Join Now
                                         </button>
                                     </Link>
                                     <Link href="/sign-in">
-                                        <button className="px-4 py-1 rounded-full bg-primary text-secondary">
+                                        <button className="px-3 py-0.5 rounded-full bg-primary text-secondary">
                                             Sign In
                                         </button>
                                     </Link>
@@ -71,16 +71,25 @@ const Header = () => {
                 </div>
                 <div className="hidden mt-1 py-2 px-2 lg:flex items-center justify-between">
                     <ul className="font-medium flex items-center space-x-8">
-                        <li className="hover:text-primary text-gray-500 cursor-pointer transition-all duration-300 ease-in-out">Dashboard</li>
-                        <li className="hover:text-primary text-gray-500 cursor-pointer transition-all duration-300 ease-in-out">Discover</li>
+                        <Link href="/"><li className="hover:text-primary text-gray-500 cursor-pointer transition-all duration-300 ease-in-out">Dashboard</li></Link>
+                        <Link href="/discover"><li className="hover:text-primary text-gray-500 cursor-pointer transition-all duration-300 ease-in-out">Discover</li></Link>
                         <li className="hover:text-primary text-gray-500 cursor-pointer transition-all duration-300 ease-in-out">Job</li>
                         <li className="hover:text-primary text-gray-500 cursor-pointer transition-all duration-300 ease-in-out">Contact Us</li>
                         <li className="hover:text-primary text-gray-500 cursor-pointer transition-all duration-300 ease-in-out">About Us</li>
                     </ul>
                     <ul className="font-medium flex items-center space-x-4">
-                        <GlobeIcon className="text-primary h-6 w-6" fill="none" stroke="currentColor"/>
-                        <GlobeIcon className="text-primary h-6 w-6" fill="none" stroke="currentColor"/>
-                        <GlobeIcon className="text-primary h-6 w-6" fill="none" stroke="currentColor"/>
+                        <img className="w-6 cursor-pointer"
+                            src='/assets/icons/fb.png'
+                            alt="social media" loading="lazy"
+                        />
+                        <img className="w-6 cursor-pointer"
+                            src='/assets/icons/instagram.png'
+                            alt="social media" loading="lazy"
+                        />
+                        <img className="w-6 cursor-pointer"
+                            src='/assets/icons/twitter.png'
+                            alt="social media" loading="lazy"
+                        />
                     </ul>
                 </div>
             </div>

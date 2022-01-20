@@ -9,7 +9,7 @@ const Footer = () => {
                         <img
                             className="px-10 lg:px-0 w-full lg:w-40 h-auto"
                             src='/assets/images/job-trailer.png'
-                            alt="logo"
+                            alt="logo" loading="lazy"
                         />
                     </div>
                     <div className="mt-8 w-full grid grid-cols-2 lg:grid-cols-4 gap-y-10">

@@ -49,6 +49,7 @@ const MainContent = () => {
         <div className="w-full lg:w-1/2 px-4 py-8 lg:px-4 lg:py-16 xl:px-8 xl:py-14 2xl:p-14">
             <img className="w-full h-auto"
                 src="/assets/images/vector.png" alt="main-image"
+                loading="lazy"
             />
         </div>
     </div>

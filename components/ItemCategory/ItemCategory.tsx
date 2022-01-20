@@ -9,10 +9,11 @@ interface ItemCategoryProps{
 
 const ItemCategory = ({ id, name, icon, jobAvailability }: ItemCategoryProps) => {
   return (
-        <div className="py-10 shadow-sm text-sm lg:text-base rounded-xl border-2 border-primary">
+        <div className="py-10 shadow-sm text-sm lg:text-base rounded-xl border-2 border-primary bg-secondary">
             <div className="px-8 w-44">
                 <img className="w-full h-auto" alt="icon"
                     src={`/assets/icons/${icon}`}
+                    loading="lazy"
                 />
             </div>
             <div className="px-2 pt-4">

@@ -10,6 +10,7 @@ const ItemBadges = ({ id, name, badge }: ItemBadgesProps) => {
           <div className="w-24 h-24">
               <img className="w-full h-full" alt="badges"
                   src={`/assets/badges/${badge}`}
+                  loading="lazy"
               />
           </div>
           <span className="block h-16 lg:h-auto mt-4 text-sm lg:text-base w-full text-primary text-center font-oxygen font-semibold">

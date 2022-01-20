@@ -6,6 +6,7 @@ const ThirdContent = () => {
                 <div className="w-full lg:w-3/4 2xl:w-1/2 py-4 mx-auto">
                     <img className="w-full h-full"
                         src="/assets/images/company.png" alt="illustration"
+                        loading="lazy"
                     />
                 </div>
                 <div className="p-4">
@@ -26,6 +27,7 @@ const ThirdContent = () => {
                 <div className="w-full lg:w-3/4 2xl:w-1/2 py-4 mx-auto">
                     <img className="w-full h-full"
                         src="/assets/images/drivers.png" alt="illustration"
+                        loading="lazy"
                     />
                 </div>
                 <div className="p-4">

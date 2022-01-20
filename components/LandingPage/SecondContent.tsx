@@ -6,6 +6,7 @@ const SecondContent = () => {
             <div className="px-4 lg:px-0 lg:mx-auto">
                 <img className="w-full h-full"
                     src="/assets/images/illustration.png" alt="illustration"
+                    loading="lazy"
                 />
             </div>
         </div>
@@ -21,6 +22,7 @@ const SecondContent = () => {
             <div className="w-96 mx-auto">
                 <img className="w-full h-full"
                     src="/assets/images/illustration.png" alt="illustration"
+                    loading="lazy"
                 />
             </div>
         </div>

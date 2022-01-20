@@ -91,22 +91,22 @@ const SignUp = () => {
                     </div>
                 </div>
                 <div className="w-full lg:flex space-y-4 lg:space-y-0 lg:space-x-6">
-                    <div className="px-4 py-2 w-full lg:w-1/2 justify-center flex items-center space-x-8 border border-primary rounded-full">
+                    <button className="px-4 py-2 w-full lg:w-1/2 justify-center flex items-center space-x-8 border border-primary rounded-full">
                         <img className="w-6"
                             src="/assets/icons/facebook.png"
                         />
                         <span className="block text-primary">
                             Sign Up with Facebook
                         </span>
-                    </div>
-                    <div className="px-4 py-2 w-full lg:w-1/2 justify-center flex items-center space-x-8 border border-primary rounded-full">
+                    </button>
+                    <button className="px-4 py-2 w-full lg:w-1/2 justify-center flex items-center space-x-8 border border-primary rounded-full">
                         <img className="w-6"
                             src="/assets/icons/google.png"
                         />
                         <span className="block text-primary">
                             Sign Up with Google
                         </span>
-                    </div>
+                    </button>
                 </div>
                 <div className="flex justify-center items-center space-x-3 mt-8">
                     <span className="block text-primary">
